@@ -54,3 +54,17 @@ brew untap drayanaindra/tap
 The formula tracks [saki-cli releases](https://github.com/drayanaindra/saki-cli/releases). See
 [`docs/RELEASING.md`](https://github.com/drayanaindra/saki-cli/blob/main/docs/RELEASING.md) in that
 repo for the release procedure this tap's version bump is part of.
+
+```bash
+brew update
+brew upgrade saki
+brew services restart saki   # required — reinstall/upgrade swaps the binary, the running
+                              # process (if you use `brew services`) keeps the old one in memory
+```
+
+Verify the running process actually picked up the new binary:
+
+```bash
+brew services list | grep saki      # confirm it's "started", not "error"
+curl -s http://127.0.0.1:8788/api/health
+```
