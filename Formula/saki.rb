@@ -1,7 +1,6 @@
 class Saki < Formula
   desc "Backend service for the saki build orchestrator"
   homepage "https://github.com/drayanaindra/saki-cli"
-  version "0.1.0"
   license "MIT"
 
   on_macos do
@@ -41,7 +40,7 @@ class Saki < Formula
   end
 
   test do
-    assert_predicate bin/"saki-backend", :exist?
+    assert_path_exists bin/"saki-backend"
     assert_predicate bin/"saki-backend", :executable?
   end
 end
