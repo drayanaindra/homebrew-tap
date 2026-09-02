@@ -5,21 +5,21 @@ class Saki < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/drayanaindra/saki-cli/releases/download/v0.3.1/saki-backend-darwin-arm64"
-      sha256 "1be4d54de1db63dbe1f7b19a9c128d452f311090a53b3635e67ba615f7c3fd35"
+      url "https://github.com/drayanaindra/saki-cli/releases/download/v0.4.0/saki-backend-darwin-arm64"
+      sha256 "8d474f925d087a505c0a288822826c1e2df7e130a64dcbc8fd7d9654957240b5"
     else
-      url "https://github.com/drayanaindra/saki-cli/releases/download/v0.3.1/saki-backend-darwin-amd64"
-      sha256 "eb7eb5cd0a9fb11179f250977141d4f8b93bdbe5a1e3f6ea644aface5d528170"
+      url "https://github.com/drayanaindra/saki-cli/releases/download/v0.4.0/saki-backend-darwin-amd64"
+      sha256 "df63da268597951f90a0faeb4bff4b0df78b3b7de0924b29ff8d16c93c809667"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/drayanaindra/saki-cli/releases/download/v0.3.1/saki-backend-linux-arm64"
-      sha256 "c19b905bae839eec0fb059f14c8a99d447898c5529c64f8fd523b2e0a6cdc583"
+      url "https://github.com/drayanaindra/saki-cli/releases/download/v0.4.0/saki-backend-linux-arm64"
+      sha256 "bc7287fa69da975b171fb62c20a664a9b337f0e22bc7bd3abb722b8d72dfcc7e"
     else
-      url "https://github.com/drayanaindra/saki-cli/releases/download/v0.3.1/saki-backend-linux-amd64"
-      sha256 "48f10dc10aeabdb7cc00fcc1fea2b2450b54e5b427208fa8e8b8b6497929f71b"
+      url "https://github.com/drayanaindra/saki-cli/releases/download/v0.4.0/saki-backend-linux-amd64"
+      sha256 "1e434d8c9527808f69dab2cea96f7ce6f1218c58b8c5413f3376445662fb5dec"
     end
   end
 
